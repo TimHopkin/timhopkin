@@ -421,6 +421,23 @@ a:hover {
     box-shadow: var(--shadow-medium);
 }
 
+.company-card__logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.company-logo {
+    max-height: 60px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.company-logo:hover {
+    transform: scale(1.05);
+}
+
 .company-card__title {
     font-size: 1.8rem;
     color: var(--primary-color);
@@ -740,6 +757,11 @@ a:hover {
 
     .profile-image {
         max-width: 200px;
+    }
+
+    .company-logo {
+        max-height: 50px;
+        max-width: 150px;
     }
 }
 
