@@ -248,14 +248,39 @@ a:hover {
 
 /* About Section */
 .about__content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+.about__profile {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+.about__image {
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
+}
+
+.profile-image:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
 }
 
 .about__subtitle {
     font-size: 1.5rem;
     color: var(--secondary-color);
-    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -650,6 +675,21 @@ a:hover {
     .footer__links {
         justify-content: center;
     }
+
+    /* About section responsive */
+    .about__profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .about__image {
+        order: -1;
+    }
+
+    .profile-image {
+        max-width: 250px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -672,6 +712,10 @@ a:hover {
     .company-card,
     .featured-article {
         padding: 1.5rem;
+    }
+
+    .profile-image {
+        max-width: 200px;
     }
 }
 
