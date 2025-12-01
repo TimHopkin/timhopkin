@@ -443,12 +443,12 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* Land App logo needs dark background for white text visibility */
-.company-card:first-child .company-logo {
+/* Land App logo needs dark background for white text visibility - REMOVED for new blue logo */
+/* .company-card:first-child .company-logo {
     background-color: #1a1a1a;
     padding: 15px 20px;
     border-radius: 8px;
-}
+} */
 
 .company-card__title {
     font-size: 1.8rem;
